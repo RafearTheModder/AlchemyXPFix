@@ -10,9 +10,12 @@ Award XP for learning ingredient effects when creating potions
 	* Add the environment variable `VCPKG_ROOT` with the value as the path to the folder containing vcpkg
 * [Visual Studio Community 2022](https://visualstudio.microsoft.com/)
 	* Desktop development with C++
-* [CommonLibSSE](https://github.com/powerof3/CommonLibSSE/tree/dev)
+* [CommonLibSSE](https://github.com/powerof3/CommonLibSSE/tree/dev) (For SE/AE)
 	* You need to build from the powerof3/dev branch
 	* Add this as as an environment variable `CommonLibSSEPath`
+* [CommonLibVR](https://github.com/RafearTheModder/CommonLibVR/tree/vr) (For VR)
+	* You need to build from the RafearTheModder/vr branch
+	* Add this as as an environment variable `CommonLibVRPath`
 
 ## User Requirements
 * [Address Library for SKSE](https://www.nexusmods.com/skyrimspecialedition/mods/32444)
@@ -38,6 +41,11 @@ cmake --build build --config Release
 ```
 cmake --preset vs2022-windows-vcpkg-ae
 cmake --build buildae --config Release
+```
+### VR
+```
+cmake --preset vs2022-windows-vcpkg-vr
+cmake --build buildvr --config Release
 ```
 ## License
 [MIT](LICENSE)
